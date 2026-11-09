@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>[COMPANY NAME] | [TAGLINE]</title>
+  <meta name="description" content="[META DESCRIPTION]" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root {
+      --brand-primary: #2563eb;
+      --brand-dark: #1e40af;
+      --brand-light: #dbeafe;
+      --brand-accent: #0ea5e9;
+    }
+    .brand-bg { background-color: var(--brand-primary); }
+    .brand-text { color: var(--brand-primary); }
+    .brand-border { border-color: var(--brand-primary); }
+    .brand-gradient { background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent)); }
+    .section-pad { padding: 5rem 1rem; }
+    @media (min-width: 1024px) { .section-pad { padding: 7rem 2rem; } }
+  </style>
+</head>
+<body class="bg-base-100 text-base-content min-h-screen flex flex-col font-sans">
+
+  <!-- Navigation -->
+  <nav class="navbar bg-base-content text-base-100 shadow-sm sticky top-0 z-50">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </div>
+        <ul class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <a href="#" class="btn btn-ghost text-xl brand-text font-bold">[LOGO / COMPANY NAME]</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work / Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <a href="#contact" class="btn btn-primary hidden sm:block">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero hero-content text-center section-pad">
+    <div class="max-w-4xl mx-auto">
+      <span class="badge badge-outline brand-border mb-4 block">[INDUSTRY / NICHE]</span>
+      <h1 class="mb-6 text-5xl font-bold text-base-content">
+        [MAIN HEADLINE — What you do in one line]
+      </h1>
+      <p class="mb-8 text-lg text-base-content/80 max-w-2xl mx-auto">
+        [SUBHEADLINE — A sentence or two explaining your value and who it's for.]
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="btn btn-primary btn-lg">[PRIMARY CTA — e.g. Get a Free Quote]</a>
+        <a href="#services" class="btn btn-outline btn-lg btn-ghost">[SECONDARY CTA — e.g. View Services]</a>
+      </div>
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center border-t border-base-content/10 pt-8">
+        <div>
+          <div class="text-2xl font-bold brand-text">[NUMBER 1]</div>
+          <div class="text-sm text-base-content/60">[LABEL 1]</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold brand-text">[NUMBER 2]</div>
+          <div class="text-sm text-base-content/60">[LABEL 2]</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold brand-text">[NUMBER 3]</div>
+          <div class="text-sm text-base-content/60">[LABEL 3]</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold brand-text">[NUMBER 4]</div>
+          <div class="text-sm text-base-content/60">[LABEL 4]</div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 flex justify-center">
+      <img src="assets/hero-image.png" alt="[Hero image alt]" class="max-w-full h-auto rounded-lg shadow-xl opacity-80" />
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-base-200 section-pad">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="badge badge-secondary mb-4 block">About Us</span>
+          <h2 class="mb-6 text-3xl font-bold text-base-content">[ABOUT HEADING]</h2>
+          <p class="mb-4 text-base-content/80 leading-relaxed">
+            [ABOUT PARAGRAPH 1 — Who you are, your story, what sets you apart.]
+          </p>
+          <p class="mb-6 text-base-content/80 leading-relaxed">
+            [ABOUT PARAGRAPH 2 — Your mission, values, and why customers choose you.]
+          </p>
+          <ul class="list-disc list-inside space-y-2 text-base-content/80">
+            <li>[Key benefit / differentiator 1]</li>
+            <li>[Key benefit / differentiator 2]</li>
+            <li>[Key benefit / differentiator 3]</li>
+          </ul>
+        </div>
+        <div class="flex justify-center">
+          <div class="card w-full max-w-md shadow-xl border-base-content/20 bg-base-100">
+            <figure><img src="assets/about-image.png" alt="[About image alt]" /></figure>
+            <div class="card-body">
+              <h2 class="card-title">[About image caption]</h2>
+              <p>[Short caption or quote about the team/work.]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section-pad">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="badge badge-outline brand-border mb-4 block">Our Services</span>
+        <h2 class="mb-6 text-3xl font-bold text-base-content">[SERVICES HEADING]</h2>
+        <p class="text-base-content/80 max-w-2xl mx-auto">[Short intro to what you offer and how it helps clients.]</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Service Card 1 -->
+        <div class="card bg-base-100 shadow-sm border-base-content/10 hover:shadow-md transition-shadow">
+          <div class="card-body">
+            <div class="avatar w-12 h-12 brand-bg text-base-content mb-4">S1</div>
+            <h3 class="card-title font-bold">[Service 1 Name]</h3>
+            <p class="text-base-content/80">[Short description of service 1 and the outcome it delivers.]</p>
+            <ul class="list-none space-y-2 mt-4 text-base-content/70 text-sm">
+              <li>✓ [Feature/detail 1]</li>
+              <li>✓ [Feature/detail 2]</li>
+              <li>✓ [Feature/detail 3]</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Service Card 2 -->
+        <div class="card bg-base-100 shadow-sm border-base-content/10 hover:shadow-md transition-shadow">
+          <div class="card-body">
+            <div class="avatar w-12 h-12 brand-bg text-base-content mb-4">S2</div>
+            <h3 class="card-title font-bold">[Service 2 Name]</h3>
+            <p class="text-base-content/80">[Short description of service 2 and the outcome it delivers.]</p>
+            <ul class="list-none space-y-2 mt-4 text-base-content/70 text-sm">
+              <li>✓ [Feature/detail 1]</li>
+              <li>✓ [Feature/detail 2]</li>
+              <li>✓ [Feature/detail 3]</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="card bg-base-100 shadow-sm border-base-content/10 hover:shadow-md transition-shadow">
+          <div class="card-body">
+            <div class="avatar w-12 h-12 brand-bg text-base-content mb-4">S3</div>
+            <h3 class="card-title font-bold">[Service 3 Name]</h3>
+            <p class="text-base-content/80">[Short description of service 3 and the outcome it delivers.]</p>
+            <ul class="list-none space-y-2 mt-4 text-base-content/70 text-sm">
+              <li>✓ [Feature/detail 1]</li>
+              <li>✓ [Feature/detail 2]</li>
+              <li>✓ [Feature/detail 3]</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="#contact" class="btn btn-brand brand-gradient btn-lg">See All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Portfolio -->
+  <section id="work" class="bg-base-200 section-pad">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-16">
+        <span class="badge badge-secondary mb-4 block">Selected Work</span>
+        <h2 class="mb-6 text-3xl font-bold text-base-content">[PORTFOLIO HEADING]</h2>
+        <p class="text-base-content/80 max-w-2xl mx-auto">[Examples of projects you've delivered for clients.]</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-sm border-base-content/10">
+          <figure><img src="assets/work-1.png" alt="[Work 1 alt]" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">[Project 1 Title]</h2>
+            <p>[One-line summary of project 1.]</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-sm border-base-content/10">
+          <figure><img src="assets/work-2.png" alt="[Work 2 alt]" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">[Project 2 Title]</h2>
+            <p>[One-line summary of project 2.]</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-sm border-base-content/10">
+          <figure><img src="assets/work-3.png" alt="[Work 3 alt]" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">[Project 3 Title]</h2>
+            <p>[One-line summary of project 3.]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section-pad">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="badge badge-outline brand-border mb-4 block">What Clients Say</span>
+      <h2 class="mb-10 text-3xl font-bold text-base-content">[TESTIMONIALS HEADING]</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card bg-base-100 shadow-sm border-base-content/10 p-6">
+          <div class="flex items-center gap-3 text-base-content/60 mb-4">
+            ★★★★★
+          </div>
+          <p class="italic text-base-content/80 mb-6">"[Testimonial quote 1 — a specific result or praise.]"</p>
+          <div class="flex items-center justify-center gap-3">
+            <div class="avatar w-10 h-12">
+              <div class="w-10 rounded-full brand-bg">A</div>
+            </div>
+            <div class="text-left">
+              <div class="font-bold text-base-content">[Client Name 1]</div>
+              <div class="text-xs text-base-content/60">[Client Role / Company]</div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-sm border-base-content/10 p-6">
+          <div class="flex items-center gap-3 text-base-content/60 mb-4">
+            ★★★★★
+          </div>
+          <p class="italic text-base-content/80 mb-6">"[Testimonial quote 2 — a specific result or praise.]"</p>
+          <div class="flex items-center justify-center gap-3">
+            <div class="avatar w-10 h-12">
+              <div class="w-10 rounded-full brand-bg">B</div>
+            </div>
+            <div class="text-left">
+              <div class="font-bold text-base-content">[Client Name 2]</div>
+              <div class="text-xs text-base-content/60">[Client Role / Company]</div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow-sm border-base-content/10 p-6">
+          <div class="flex items-center gap-3 text-base-content/60 mb-4">
+            ★★★★★
+          </div>
+          <p class="italic text-base-content/80 mb-6">"[Testimonial quote 3 — a specific result or praise.]"</p>
+          <div class="flex items-center justify-center gap-3">
+            <div class="avatar w-10 h-12">
+              <div class="w-10 rounded-full brand-bg">C</div>
+            </div>
+            <div class="text-left">
+              <div class="font-bold text-base-content">[Client Name 3]</div>
+              <div class="text-xs text-base-content/60">[Client Role / Company]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="brand-gradient text-base-content section-pad">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="mb-4 text-3xl font-bold">[CONTACT HEADING — e.g. Ready to Get Started?]</h2>
+      <p class="mb-8 text-base-content/90 text-lg">[One line inviting them to reach out.]</p>
+      <form class="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto" action="#" method="POST">
+        <input type="email" placeholder="[Your email]" required class="input input-bordered flex-1 min-w-[200px]" />
+        <button type="submit" class="btn btn-base-content btn-lg">[Button — e.g. Subscribe / Get in Touch]</button>
+      </form>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center text-sm text-base-content/70">
+        <a href="mailto:[EMAIL]" class="hover:underline">[EMAIL ADDRESS]</a>
+        <a href="tel:[PHONE]" class="hover:underline">[PHONE NUMBER]</a>
+        <a href="https://[WEBSITE]" class="hover:underline">[WEBSITE / SOCIAL]</a>
+        <p>[CITY / REGION]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-center bg-base-content text-base-100 p-6 border-t border-base-content/20">
+    <p>© <span id="year"></span> [COMPANY NAME]. All rights reserved.</p>
+    <div class="mb-2">
+      <a href="#" class="text-base-100/70 hover:text-base-100 mx-2">[Social 1]</a>
+      <a href="#" class="text-base-100/70 hover:text-base-100 mx-2">[Social 2]</a>
+      <a href="#" class="text-base-100/70 hover:text-base-100 mx-2">[Social 3]</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
