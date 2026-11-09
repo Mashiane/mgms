@@ -11,16 +11,17 @@
   <meta property="og:url" content="https://www.mgms.africa">
   <meta property="og:image" content="assets/hero-building.jpg">
   <link rel="canonical" href="https://www.mgms.africa/">
-  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="187x185">
+  <link rel="preload" as="image" href="assets/hero-building-1920.webp" imagesrcset="assets/hero-building-640.webp 640w, assets/hero-building-1280.webp 1280w, assets/hero-building-1920.webp 1920w" imagesizes="100vw" type="image/webp" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@5">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="site-header">
   <div class="container-wide header-inner">
-    <a href="#home" aria-label="MGMS Holdings home"><img class="brand-logo" src="assets/logo.png" alt="MGMS Holdings"></a>
+    <a href="#home" aria-label="MGMS Holdings home"><img class="brand-logo" src="assets/logo.png" alt="MGMS Holdings" width="778" height="172" decoding="async"></a>
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#about">About</a><a href="#sectors">Investment sectors</a><a href="#impact">Our impact</a><a href="#values">Our values</a>
       <a class="btn-gold" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
@@ -35,7 +36,11 @@
 </header>
 <main>
   <section class="hero" id="home">
-    <div class="container-wide"><div class="hero-copy">
+    <picture class="hero-image">
+      <source srcset="assets/hero-building-640.webp 640w, assets/hero-building-1280.webp 1280w, assets/hero-building-1920.webp 1920w" sizes="100vw" type="image/webp">
+      <img src="assets/hero-building.jpg" alt="" aria-hidden="true" width="1920" height="1440" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="container-wide"><div class="hero-copy" data-aos="fade-up">
       <span class="eyebrow">MGMS Holdings · South Africa</span>
       <h1>Empowering Africa’s growth through <em>sustainable investments.</em></h1>
       <p>We invest with a long-term perspective—seeking financial performance while helping build generational wealth, empower communities and drive innovation across the continent.</p>
@@ -50,13 +55,16 @@
   </div></section>
 
   <section class="section" id="about"><div class="container-wide two-col">
-    <div class="reveal"><span class="eyebrow">About MGMS Holdings</span><h2>Capital with a wider purpose.</h2>
+    <div class="reveal" data-aos="fade-up"><span class="eyebrow">About MGMS Holdings</span><h2>Capital with a wider purpose.</h2>
       <p class="lead">MGMS Holdings is a 100% Black-owned investment company headquartered in South Africa, with a vision to transform Africa’s economic landscape through sustainable and inclusive investments.</p>
       <p class="body-copy">Our focus spans six sectors that are central to Africa’s long-term resilience and growth: Agriculture, Energy, Hospitality, Logistics, Technology and Financial Services.</p>
       <p class="body-copy">Our ambition extends beyond financial returns. We seek to build generational wealth, empower communities and drive innovation across the continent.</p>
       <a class="text-link" href="#contact">Connect with our team <span aria-hidden="true">→</span></a>
     </div>
-    <div class="image-frame about-photo reveal"><img src="assets/about-boardroom.jpg" alt="Boardroom setting representing investment strategy and collaboration" loading="lazy">
+    <div class="image-frame about-photo reveal" data-aos="fade-left"><picture>
+      <source srcset="assets/about-boardroom-384.webp 384w, assets/about-boardroom-576.webp 576w, assets/about-boardroom-768.webp 768w" sizes="(max-width: 760px) 100vw, 50vw" type="image/webp">
+      <img src="assets/about-boardroom.jpg" alt="Boardroom setting representing investment strategy and collaboration" width="768" height="1152" loading="lazy" decoding="async">
+    </picture>
       <div class="image-note"><strong>Long-term thinking.</strong><span>Sustainable and inclusive investment.</span></div>
     </div>
   </div></section>
@@ -65,23 +73,41 @@
     <div class="section-intro reveal"><span class="eyebrow">Where we invest</span><h2>Six sectors. One long-term outlook.</h2>
       <p class="lead">We strategically invest in high-growth industries that shape Africa’s future. Each sector offers opportunities to support resilience, innovation and inclusive economic development.</p></div>
     <div class="sector-grid">
-      <article class="sector-card reveal"><img src="assets/agriculture.jpg" alt="Agricultural land and farming" loading="lazy"><div class="sector-overlay"><span>01 / AGRICULTURE</span><h3>Growing food security.</h3><p>Driving food security and sustainable farming practices.</p></div></article>
-      <article class="sector-card reveal"><img src="assets/values-infrastructure.jpg" alt="Infrastructure and built environment" loading="lazy"><div class="sector-overlay"><span>02 / ENERGY</span><h3>Powering a sustainable future.</h3><p>Expanding renewable and clean energy solutions.</p></div></article>
-      <article class="sector-card reveal"><img src="assets/contact.jpg" alt="Corporate environment" loading="lazy"><div class="sector-overlay"><span>03 / HOSPITALITY</span><h3>Creating welcoming destinations.</h3><p>Supporting tourism, culture and local job creation.</p></div></article>
-      <article class="sector-card reveal"><img src="assets/logistics.jpg" alt="Logistics and freight operations" loading="lazy"><div class="sector-overlay"><span>04 / LOGISTICS</span><h3>Connecting markets.</h3><p>Strengthening supply chains and trade networks.</p></div></article>
-      <article class="sector-card reveal"><img src="assets/mission-team.jpg" alt="Team collaboration" loading="lazy"><div class="sector-overlay"><span>05 / TECHNOLOGY</span><h3>Backing new ideas.</h3><p>Backing digital innovation and scalable technology solutions.</p></div></article>
-      <article class="sector-card reveal"><img src="assets/about-boardroom.jpg" alt="Business planning and financial discussion" loading="lazy"><div class="sector-overlay"><span>06 / FINANCIAL SERVICES</span><h3>Broadening financial access.</h3><p>Empowering inclusive finance, fintech and wealth management.</p></div></article>
+      <article class="sector-card reveal" data-aos="fade-up" data-aos-delay="0"><picture>
+      <source srcset="assets/agriculture-640.webp 640w, assets/agriculture-1280.webp 1280w, assets/agriculture-1920.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp">
+      <img src="assets/agriculture.jpg" alt="Agricultural land and farming" width="1920" height="1280" loading="lazy" decoding="async">
+    </picture><div class="sector-overlay"><span>01 / AGRICULTURE</span><h3>Growing food security.</h3><p>Driving food security and sustainable farming practices.</p></div></article>
+      <article class="sector-card reveal" data-aos="fade-up" data-aos-delay="70"><picture>
+      <source srcset="assets/values-infrastructure-576.webp 576w, assets/values-infrastructure-1152.webp 1152w, assets/values-infrastructure-1728.webp 1728w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp">
+      <img src="assets/values-infrastructure.jpg" alt="Infrastructure and built environment" width="1728" height="1259" loading="lazy" decoding="async">
+    </picture><div class="sector-overlay"><span>02 / ENERGY</span><h3>Powering a sustainable future.</h3><p>Expanding renewable and clean energy solutions.</p></div></article>
+      <article class="sector-card reveal" data-aos="fade-up" data-aos-delay="140"><picture>
+      <source srcset="assets/contact-480.webp 480w, assets/contact-720.webp 720w, assets/contact-960.webp 960w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp">
+      <img src="assets/contact.jpg" alt="Corporate environment" width="960" height="1440" loading="lazy" decoding="async">
+    </picture><div class="sector-overlay"><span>03 / HOSPITALITY</span><h3>Creating welcoming destinations.</h3><p>Supporting tourism, culture and local job creation.</p></div></article>
+      <article class="sector-card reveal" data-aos="fade-up" data-aos-delay="210"><picture>
+      <source srcset="assets/logistics-640.webp 640w, assets/logistics-1280.webp 1280w, assets/logistics-1920.webp 1920w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp">
+      <img src="assets/logistics.jpg" alt="Logistics and freight operations" width="1920" height="1280" loading="lazy" decoding="async">
+    </picture><div class="sector-overlay"><span>04 / LOGISTICS</span><h3>Connecting markets.</h3><p>Strengthening supply chains and trade networks.</p></div></article>
+      <article class="sector-card reveal" data-aos="fade-up" data-aos-delay="280"><picture>
+      <source srcset="assets/mission-team-480.webp 480w, assets/mission-team-960.webp 960w, assets/mission-team-1344.webp 1344w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" type="image/webp">
+      <img src="assets/mission-team.jpg" alt="Team collaboration" width="1344" height="898" loading="lazy" decoding="async">
+    </picture><div class="sector-overlay"><span>05 / TECHNOLOGY</span><h3>Backing new ideas.</h3><p>Backing digital innovation and scalable technology solutions.</p></div></article>
+      <article class="sector-card reveal" data-aos="fade-up" data-aos-delay="350"><picture>
+      <source srcset="assets/about-boardroom-384.webp 384w, assets/about-boardroom-576.webp 576w, assets/about-boardroom-768.webp 768w" sizes="(max-width: 760px) 100vw, 50vw" type="image/webp">
+      <img src="assets/about-boardroom.jpg" alt="Business planning and financial discussion" width="768" height="1152" loading="lazy" decoding="async">
+    </picture><div class="sector-overlay"><span>06 / FINANCIAL SERVICES</span><h3>Broadening financial access.</h3><p>Empowering inclusive finance, fintech and wealth management.</p></div></article>
     </div>
   </div></section>
 
   <section class="section section-dark" id="vision"><div class="container-wide vision-grid">
-    <div class="reveal"><span class="eyebrow">Our vision</span><h2>To become one of Africa’s leading investment partners.</h2><p class="lead">Fostering sustainable growth, innovation and generational wealth creation.</p></div>
+    <div class="reveal" data-aos="fade-up"><span class="eyebrow">Our vision</span><h2>To become one of Africa’s leading investment partners.</h2><p class="lead">Fostering sustainable growth, innovation and generational wealth creation.</p></div>
     <div class="vision-divider"></div>
-    <div class="reveal"><span class="eyebrow">Our mission</span><h2>Delivering transformative investments.</h2><p class="lead">Aligning with Africa’s development agenda, empowering communities and creating lasting impact across sectors.</p></div>
+    <div class="reveal" data-aos="fade-up"><span class="eyebrow">Our mission</span><h2>Delivering transformative investments.</h2><p class="lead">Aligning with Africa’s development agenda, empowering communities and creating lasting impact across sectors.</p></div>
   </div></section>
 
   <section class="section" id="values"><div class="container-wide values-layout">
-    <div class="reveal"><span class="eyebrow">What guides us</span><h2>Our values are our foundation.</h2><p class="lead">The principles that guide how we assess opportunities, work with partners and pursue lasting outcomes.</p></div>
+    <div class="reveal" data-aos="fade-up"><span class="eyebrow">What guides us</span><h2>Our values are our foundation.</h2><p class="lead">The principles that guide how we assess opportunities, work with partners and pursue lasting outcomes.</p></div>
     <div class="values-grid">
       <article class="value-card reveal"><span>01</span><h3>Integrity</h3><p>We act with honesty and transparency.</p></article>
       <article class="value-card reveal"><span>02</span><h3>Accountability</h3><p>We deliver on our promises.</p></article>
@@ -91,7 +117,10 @@
     </div>
   </div></section>
 
-  <section class="impact-section" id="impact"><div class="impact-image"><img src="assets/community.jpg" alt="Community engagement and local development" loading="lazy"></div>
+  <section class="impact-section" id="impact"><div class="impact-image"><picture>
+      <source srcset="assets/community-480.webp 480w, assets/community-960.webp 960w, assets/community-1344.webp 1344w" sizes="(max-width: 760px) 100vw, 50vw" type="image/webp">
+      <img src="assets/community.jpg" alt="Community engagement and local development" width="1344" height="898" loading="lazy" decoding="async">
+    </picture></div>
     <div class="impact-content"><span class="eyebrow">Social responsibility</span><h2>Investment should create opportunity.</h2>
       <p>MGMS Holdings prioritises community impact. From skills training to youth empowerment and small business support, we seek to ensure our investments create opportunities for people while protecting the environment.</p>
       <div class="impact-points"><span>Skills development</span><span>Youth empowerment</span><span>Small business support</span><span>Environmental care</span></div>
@@ -110,7 +139,7 @@
 </main>
 <footer class="footer"><div class="container-wide">
   <div class="footer-main">
-    <div class="footer-brand"><img class="footer-logo" src="assets/logo.png" alt="MGMS Holdings"><p>Empowering Africa’s Growth Through Sustainable Investments.</p></div>
+    <div class="footer-brand"><img class="footer-logo" src="assets/logo.png" alt="MGMS Holdings" width="778" height="172" loading="lazy" decoding="async"><p>Empowering Africa’s Growth Through Sustainable Investments.</p></div>
     <div class="footer-links"><div><h3>Explore</h3><a href="#about">About us</a><a href="#sectors">Investment sectors</a><a href="#vision">Vision & mission</a><a href="#values">Core values</a></div>
       <div><h3>Contact</h3><a href="mailto:info@mgms.africa">info@mgms.africa</a><a href="https://www.mgms.africa" target="_blank" rel="noopener">www.mgms.africa</a><span>11 Woodlands Dr<br>Woodlands, Sandton, 2080</span></div></div>
   </div><div class="footer-bottom"><span>© <span id="current-year"></span> MGMS Holdings. All rights reserved.</span><span>South Africa</span></div>
